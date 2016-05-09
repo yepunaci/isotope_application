@@ -1,0 +1,80 @@
+discarding /opt/anaconda/anaconda/bin from PATH
+prepending /opt/anaconda/anaconda/envs/rmg_env/bin to PATH
+Match no: 0
+Mol atom number: 3, Group atom number: 2
+Mol atom number: 4, Group atom number: 3
+Mol atom number: 0, Group atom number: 0
+Mol atom number: 2, Group atom number: 1
+Match no: 1
+Mol atom number: 3, Group atom number: 3
+Mol atom number: 4, Group atom number: 2
+Mol atom number: 0, Group atom number: 0
+Mol atom number: 2, Group atom number: 1
+Match no: 2
+Mol atom number: 3, Group atom number: 1
+Mol atom number: 4, Group atom number: 3
+Mol atom number: 0, Group atom number: 0
+Mol atom number: 2, Group atom number: 2
+Match no: 3
+Mol atom number: 3, Group atom number: 1
+Mol atom number: 4, Group atom number: 2
+Mol atom number: 0, Group atom number: 0
+Mol atom number: 2, Group atom number: 3
+Match no: 4
+Mol atom number: 3, Group atom number: 3
+Mol atom number: 4, Group atom number: 1
+Mol atom number: 0, Group atom number: 0
+Mol atom number: 2, Group atom number: 2
+Match no: 5
+Mol atom number: 3, Group atom number: 2
+Mol atom number: 4, Group atom number: 1
+Mol atom number: 0, Group atom number: 0
+Mol atom number: 2, Group atom number: 3
+Match no: 6
+Mol atom number: 5, Group atom number: 1
+Mol atom number: 6, Group atom number: 2
+Mol atom number: 7, Group atom number: 3
+Mol atom number: 1, Group atom number: 0
+Match no: 7
+Mol atom number: 5, Group atom number: 1
+Mol atom number: 6, Group atom number: 3
+Mol atom number: 7, Group atom number: 2
+Mol atom number: 1, Group atom number: 0
+Match no: 8
+Mol atom number: 5, Group atom number: 2
+Mol atom number: 6, Group atom number: 1
+Mol atom number: 7, Group atom number: 3
+Mol atom number: 1, Group atom number: 0
+Match no: 9
+Mol atom number: 5, Group atom number: 3
+Mol atom number: 6, Group atom number: 1
+Mol atom number: 7, Group atom number: 2
+Mol atom number: 1, Group atom number: 0
+Match no: 10
+Mol atom number: 5, Group atom number: 2
+Mol atom number: 6, Group atom number: 3
+Mol atom number: 7, Group atom number: 1
+Mol atom number: 1, Group atom number: 0
+Match no: 11
+Mol atom number: 5, Group atom number: 3
+Mol atom number: 6, Group atom number: 2
+Mol atom number: 7, Group atom number: 1
+Mol atom number: 1, Group atom number: 0
+[[ 0.5         0.5         0.          0.          0.          0.          0.
+   0.        ]
+ [ 0.          0.          0.16666667  0.16666667  0.16666667  0.16666667
+   0.16666667  0.16666667]
+ [ 0.          0.          0.16666667  0.16666667  0.16666667  0.16666667
+   0.16666667  0.16666667]
+ [ 0.          0.          0.16666667  0.16666667  0.16666667  0.16666667
+   0.16666667  0.16666667]]
+[[ 0.5         0.          0.          0.        ]
+ [ 0.5         0.          0.          0.        ]
+ [ 0.          0.16666667  0.16666667  0.16666667]
+ [ 0.          0.16666667  0.16666667  0.16666667]
+ [ 0.          0.16666667  0.16666667  0.16666667]
+ [ 0.          0.16666667  0.16666667  0.16666667]
+ [ 0.          0.16666667  0.16666667  0.16666667]
+ [ 0.          0.16666667  0.16666667  0.16666667]]
+number of results: 12
+discarding /opt/anaconda/anaconda/envs/rmg_env/bin from PATH

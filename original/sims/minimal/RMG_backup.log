@@ -1,0 +1,197 @@
+Global RMG Settings:
+   database.directory   = /home/soyoung/original/RMG-database/input (Default, relative to RMG-Py source code)
+RMG execution initiated at Fri Feb 26 12:27:46 2016
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 1.0.1                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+
+Reading input file "/home/soyoung/original/sims/minimal/input.py"...
+# Data sources
+database(
+    thermoLibraries = ['primaryThermoLibrary'],
+    reactionLibraries = [],
+    seedMechanisms = [],
+    kineticsDepositories = ['training'],
+    kineticsFamilies = 'default',
+    kineticsEstimator = 'rate rules',
+)
+
+# List of species
+species(
+    label='propane',
+    reactive=True,
+    structure=SMILES("CC"),
+)
+
+
+# Reaction systems
+simpleReactor(
+    temperature=(1673,'K'),
+    pressure=(1.0,'bar'),
+    initialMoleFractions={
+        "propane": 1.0,
+    },
+    terminationConversion={
+        'propane': 0.9,
+    },
+    terminationTime=(1e6,'s'),
+)
+
+simulator(
+    atol=1e-16,
+    rtol=1e-8,
+)
+
+model(
+    toleranceKeepInEdge=0.0,
+    toleranceMoveToCore=0.1,
+    toleranceInterruptSimulation=0.1,
+    maximumEdgeSpecies=100000
+)
+
+options(
+    units='si',
+    saveRestartPeriod=None,
+    generateOutputHTML=True,
+    generatePlots=True,
+    saveEdgeSpecies=True,
+    saveSimulationProfiles=True,
+)
+
+
+Loading thermodynamics library from primaryThermoLibrary.py in /home/soyoung/original/RMG-database/input/thermo/libraries...
+Loading thermodynamics group database from /home/soyoung/original/RMG-database/input/thermo/groups...
+Loading transport library from PrimaryTransportLibrary.py in /home/soyoung/original/RMG-database/input/transport/libraries...
+Loading transport library from GRI-Mech.py in /home/soyoung/original/RMG-database/input/transport/libraries...
+Loading transport group database from /home/soyoung/original/RMG-database/input/transport/groups...
+Loading default kinetics families from /home/soyoung/original/RMG-database/input/kinetics/families
+Loading frequencies group database from /home/soyoung/original/RMG-database/input/statmech/groups...
+Loading Platts additivity group database from /home/soyoung/original/RMG-database/input/solvation/groups...
+Adding rate rules from training set in kinetics families...
+Resonance isomer 1 [CH2]C(=O)OO gives H298=-149381 J/mol
+Resonance isomer 2 C=C([O])OO gives H298=-264 J/mol
+Found thermo for O2 in thermo library: primarythermolibrary
+Found thermo for O2 in thermo library: primarythermolibrary
+Found thermo for O2 in thermo library: primarythermolibrary
+Filling in rate rules in kinetics families by averaging...
+Found thermo for Ar in thermo library: primarythermolibrary
+Found thermo for He in thermo library: primarythermolibrary
+Found thermo for Ne in thermo library: primarythermolibrary
+Found thermo for N2 in thermo library: primarythermolibrary
+NOT generating reactions for unreactive species Ar
+Generating thermodynamics for new species...
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+----------------------------
+Added 1 new core species
+    Ar
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 1 species and 0 reactions
+    The model edge has 0 species and 0 reactions
+
+
+NOT generating reactions for unreactive species He
+Generating thermodynamics for new species...
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+----------------------------
+Added 1 new core species
+    He
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 2 species and 0 reactions
+    The model edge has 0 species and 0 reactions
+
+
+NOT generating reactions for unreactive species Ne
+Generating thermodynamics for new species...
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+----------------------------
+Added 1 new core species
+    Ne
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 3 species and 0 reactions
+    The model edge has 0 species and 0 reactions
+
+
+NOT generating reactions for unreactive species N2
+Generating thermodynamics for new species...
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+----------------------------
+Added 1 new core species
+    N2
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 4 species and 0 reactions
+    The model edge has 0 species and 0 reactions
+
+
+Adding species propane(1) to model core
+Generating thermodynamics for new species...
+Found thermo for [CH2] in thermo library: primarythermolibrary
+Found thermo for C in thermo library: primarythermolibrary
+Found thermo for [H] in thermo library: primarythermolibrary
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+----------------------------
+Added 1 new core species
+    propane(1)
+Created 5 new edge species
+    [CH2](2)
+    C(3)
+    [CH3](4)
+    C[CH2](5)
+    [H](6)
+Added 0 new core reactions
+Created 3 new edge reactions
+    [CH2](2) + C(3) <=> propane(1)
+    [CH3](4) + [CH3](4) <=> propane(1)
+    C[CH2](5) + [H](6) <=> propane(1)
+
+After model enlargement:
+    The model core has 5 species and 0 reactions
+    The model edge has 5 species and 3 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 0 reactions.
+Saving current model to verbose Chemkin file...
+Chemkin file contains 0 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 3 reactions.
+Saving current core and edge to verbose Chemkin file...
+Chemkin file contains 3 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:00:29
+    Memory used: 217.05 MB
+Generating plots of execution statistics...
